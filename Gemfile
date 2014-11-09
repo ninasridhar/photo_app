@@ -6,7 +6,30 @@ gem 'rails', '3.2.19'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'pg'
+gem 'haml-rails'
+gem 'devise'
 
+group :test do
+  gem 'rspec-rails', "~> 2.14.2"
+  gem 'database_cleaner'
+  gem 'shoulda'
+  gem 'capybara'
+end
+
+group :development do
+  gem 'pry-rails'
+  gem 'pry-byebug'
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'meta_request'
+end
+
+gem 'carrierwave', '0.9.0'
+gem 'rmagick'
+gem 'ransack'
+gem 'cancancan', '~> 1.9'
+gem 'bourbon'
+gem 'simple_hashtag'
 
 # Gems used only for assets and not required
 # in production environments by default.
