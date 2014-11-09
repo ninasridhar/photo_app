@@ -1,4 +1,22 @@
 PhotoApp::Application.routes.draw do
+  resources :comments
+
+
+  resources :categories
+
+
+  resources :locations
+
+
+  resources :tags
+
+
+  resources :albums
+
+
+  resources :photos
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
